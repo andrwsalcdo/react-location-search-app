@@ -1,0 +1,31 @@
+{
+  "name": "react-location-search-app",
+  "version": "1.0.0",
+  "description": "Inspiration from [this article by Nick Anastasov](http://tutorialzine.com/2015/04/first-webapp-react/)",
+  "main": "main.js",
+  "dependencies": {
+    "browserify": "^14.3.0",
+    "moment": "^2.18.1",
+    "react": "^15.5.4",
+    "reactify": "^1.1.1",
+    "react-dom": "^15.5.4",
+    "uglify-js": "^3.0.1",
+    "watchify": "^3.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify -v -d -t [ reactify --es6] main.js -o compiled.js",
+    "build": "NODE_ENV=production browserify -t [ reactify --es6 ] main.js | uglify.js > compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrwsalcdo/react-location-search-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrwsalcdo/react-location-search-app/issues"
+  },
+  "homepage": "https://github.com/andrwsalcdo/react-location-search-app#readme"
+}
