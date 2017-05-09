@@ -2,7 +2,7 @@ const react = require('react');
 const LocationItem = require('./LocationItem');
 const moment = require('moment');
 
-const LocationItem = React.createClass({
+let LocationItem = React.createClass({
 
         handleClick() {
               this.props.onClick(this.props.address);
@@ -26,4 +26,4 @@ const LocationItem = React.createClass({
         }
 });
 
-module.exports = LocationItem; 
+module.exports = LocationItem;

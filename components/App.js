@@ -95,7 +95,7 @@ const App = React.createClass({
             }
 
             return false;
-      }
+      },
 
       searchForAddress(address) {
 
